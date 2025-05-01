@@ -1,0 +1,20 @@
+{
+  "name": "javascript-code-files",
+  "version": "1.0.0",
+  "main": "basics1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeldanasadykova/javascript-learning.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yeldanasadykova/javascript-learning/issues"
+  },
+  "homepage": "https://github.com/yeldanasadykova/javascript-learning#readme"
+}
