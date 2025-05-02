@@ -82,3 +82,54 @@ console.log(x === '1') //false, strict comparison
 console.log(x === 1) //true
 
 //Logical Operators
+//AND
+console.log(true && true) //all values have to be TRUE for expression to be TRUE
+console.log(true && false) //false
+
+//OR
+console.log(true || true) //any value should be TRUE for the expression to be TRUE
+console.log(true || true) //false
+
+var ageIsMoreThanEighteen = true
+var isUSCitizen = false
+
+var eligibilityForDriversLicense = ageIsMoreThanEighteen && isUSCitizen
+console.log('This customer is eligible for DL: ' + eligibilityForDriversLicense)
+
+//NOT
+console.log(!true) //false
+console.log(!false) //true
+console.log(6 !== 10) //true
+
+//Conditional statements
+/*
+if(condition){
+    //execute some code here
+} else {
+    //execute some code here
+}
+*/
+
+//If hour between 6 and 12 print "Good Morning!"
+//If hour between 12 and 18 print "Good Afternoon!"
+//Otherwise: Good Evening!
+var hour = 12
+
+if (hour >= 6 && hour < 12){
+    console.log('Good Morning!')
+} else if (hour >= 12 && hour < 18){
+    console.log('Good Afternoon!')
+} else {
+    console.log('Good Evening!')
+}
+
+var ageIsMoreThanEighteen = true
+var isUSCitizen = false
+
+if (ageIsMoreThanEighteen && isUSCitizen){
+    console.log ('Eligible for DL')
+} else {
+    console.log ('NOT eligible for DL')
+}
+
+//Loops
