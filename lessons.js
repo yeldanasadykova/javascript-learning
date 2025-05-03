@@ -133,3 +133,110 @@ if (ageIsMoreThanEighteen && isUSCitizen){
 }
 
 //Loops
+//for(statement1; statement2; statement3){...}
+
+//for loop (for i loop)
+for(let i=0; i<5; i++){
+    console.log('Hello' + i)
+}
+
+var cars = ["Mini", "Toyota", "Tesla"]
+//for of loop
+for(let c of cars){
+    console.log(c)
+    if(c == "Mini"){
+        break
+    }
+}
+
+//ES6 syntax for each loop
+cars.forEach(c => {
+    console.log(c)
+})
+
+//Functions
+//Declarative
+helloOne()
+function helloOne(){
+    console.log('Hello one!')
+}
+//helloOne()
+
+//Anoymus
+var helloTwo = function(){
+    console.log('Hello two!')
+}
+helloTwo()
+
+//ES6 function syntax or arrow function
+var helloThree = () => {
+    console.log('Hello three!')
+}
+helloThree()
+
+//Function with arguments
+function printName(name, lastName){
+    console.log(name + ' ' + lastName)
+}
+printName('Mike', 'Smith')
+
+//Function with return
+function multiplyByTwo(number){
+    var result = number * 2
+    return result
+}
+var myResult = multiplyByTwo(2)
+console.log(myResult)
+
+//import function
+import {printAge} from '../javascript-learning/printHelper.js'
+printAge(20)
+
+//import everything
+import * as helper from '../javascript-learning/printHelper.js'
+helper.printAge(10)
+
+function lifeInWeeks(age) {        
+    var yearsRemaining = 90 - age;
+    var daysRemaining = yearsRemaining*365;
+    var weeksRemaining = yearsRemaining*52;
+    var monthsRemaining = yearsRemaining*12;
+    console.log("You have " + daysRemaining + " days, " + weeksRemaining + " weeks, and " + monthsRemaining + " months left.");
+}
+lifeInWeeks(25)
+
+//Class
+
+import { CustomerDetails } from '../javascript-learning/printHelper.js';
+
+var details = new CustomerDetails()
+details.printFirstName('Roman')
+details.printLastName ('Ong')
+
+
+import { cDetails } from '../javascript-learning/printHelper.js';
+
+cDetails.printFirstName('Mike')
+cDetails.printLastName ('Smith')
+
+//Exercise
+// Step 1: Create the variables
+let familySize = 'apple';
+let plannedDistanceToDrive = '50';
+
+// Step 2: Define the function
+function recommendedCar(familySize, plannedDistanceToDrive) {
+  if (familySize <= 4 && plannedDistanceToDrive < 200) {
+    return "Tesla";
+  } else if (familySize <= 4 && plannedDistanceToDrive >= 200) {
+    return "Toyota Camry";
+  } else if (familySize > 4) {
+    return "Minivan";
+  } else {
+    return "No recommendation available";
+  }
+}
+
+// Step 3: Call the function and display the result
+car = recommendedCar(familySize, plannedDistanceToDrive);
+console.log("Recommended car:", car);
